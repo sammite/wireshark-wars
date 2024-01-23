@@ -5,3 +5,7 @@
 
 # We'll use this to place our decrypted traffic keys
 SetX SSLKEYLOGFILE "C:\Users\Public\ssl.log"
+
+# Now you can see for any user! This one requires admin privileges. 
+
+SetX SSLKEYLOGFILE /m "C:\Users\Public\ssl.log"
